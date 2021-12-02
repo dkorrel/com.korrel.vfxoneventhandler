@@ -14,11 +14,11 @@ namespace Korrel.VFXOnEventHandler
             current = this;
         }
 
-        public event Action<string, Transform> onVFXUpdate;
+        public event Action<string, Transform, float> onVFXUpdate;
 
-        public void OnVFXUpdate(string eventIdentifier, Transform _transform)
+        public void OnVFXUpdate(string eventIdentifier, Transform _transform, float value)
         {
-            if (onVFXUpdate != null) onVFXUpdate(eventIdentifier, _transform);
+            if (onVFXUpdate != null) onVFXUpdate(eventIdentifier, _transform, value);
         }
     }
 }

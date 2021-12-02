@@ -6,7 +6,7 @@ namespace Korrel.VFXOnEventHandler
 {
     public class Rotate : BaseEffectBehaviour
     {
-        protected override void HandleVFXUpdate(Transform _transform)
+        protected override void HandleVFXUpdate(Transform _transform, float value)
         {
             transform.rotation = _transform.rotation;
         }
