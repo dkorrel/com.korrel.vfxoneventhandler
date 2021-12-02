@@ -1,0 +1,17 @@
+{
+    "name": "com.korrel.vfxoneventhandler",
+    "version": "1.0.0",
+    "displayName": "VFXOnEventHandler",
+    "description": "Handle the behaviour of VFX controlled by triggered events.",
+   "keywords": [
+      "Events",
+      "VFX",
+      "Effects",
+      "Behaviour"
+    ],
+    "author": {
+      "name": "Daniel Korrel",
+      "email": "dkorrel@gmail.com"
+    }
+  }
+  
