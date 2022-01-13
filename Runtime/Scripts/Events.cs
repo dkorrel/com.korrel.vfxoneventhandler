@@ -15,6 +15,7 @@ namespace Korrel.VFXOnEventHandler
         }
 
         public event Action<string, Transform, float> onVFXUpdate;
+        public event Action<string, float> onVFXDestroy;
 
         public void OnVFXUpdate(string eventIdentifier, Transform _transform, float value)
         {
