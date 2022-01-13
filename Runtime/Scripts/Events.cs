@@ -20,5 +20,10 @@ namespace Korrel.VFXOnEventHandler
         {
             if (onVFXUpdate != null) onVFXUpdate(eventIdentifier, _transform, value);
         }
+
+        public void OnVFXDestroy(string eventIdentifier, float destroyAfter = 0)
+        {
+            if (onVFXDestroy != null) onVFXDestroy(eventIdentifier, destroyAfter);
+        }
     }
 }
