@@ -7,5 +7,5 @@ namespace Korrel.VFXOnEventHandler
     public class Destroy : BaseEffectBehaviour
     {
        
-    }
+    } 
 }
