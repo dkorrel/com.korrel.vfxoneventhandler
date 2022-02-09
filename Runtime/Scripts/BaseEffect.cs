@@ -31,12 +31,18 @@ namespace Korrel.VFXOnEventHandler
         public void OnVFXDestroy(string _eventIdentifier, float destroyAfter)
         {
             if (eventIdentifier != _eventIdentifier) return;
-            Destroy(gameObject, destroyAfter);
+            HandleVFXDestroy(gameObject, destroyAfter);
         }
 
         protected virtual void HandleVFXUpdate(Transform _transform, float value)
         {
             // Override this method
+        }
+
+        protected virtual void HandleVFXDestroy(GameObject gameObject, float destroyAfter)
+        {
+            // Override this method
+            Destroy(gameObject, destroyAfter);
         }
     }
 }
